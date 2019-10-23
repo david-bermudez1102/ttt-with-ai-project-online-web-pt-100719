@@ -24,8 +24,7 @@ def start
     puts "- Human, input 0"
     puts "- Computer, input 1"
     input_2 = gets.strip
-    puts "What token would you like to choose? Input X or O"
-    token_input = gets.strip
+
     human_vs_computer(input_2,token_input)
   when "2"
     puts "Who should go first?"
@@ -60,6 +59,8 @@ def human_vs_computer(input,token)
     elsif(token == "O" || token == "o")
       game = Game.new(@human_o,@computer_x,@board)
     end
+    puts "What token would you like to choose? Input X or O"
+    token_input = gets.strip
     puts "Input a number from 1 to 9"
     game.play
   when "1"
@@ -68,6 +69,8 @@ def human_vs_computer(input,token)
     elsif(token == "O" || token == "o")
       game = Game.new(@computer_x,@human_o,@board)
     end
+    puts "What token would you like to choose? Input X or O"
+    token_input = gets.strip
     puts "Input a number from 1 to 9"
     game.play
   else
