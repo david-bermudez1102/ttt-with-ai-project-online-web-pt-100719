@@ -97,4 +97,6 @@ def human_vs_human(input,token)
     game.play
   end
 end
+
+def who_should_start(player_1,player_2)
 start
