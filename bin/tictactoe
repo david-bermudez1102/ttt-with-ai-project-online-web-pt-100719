@@ -20,10 +20,7 @@ def start
     game = Game.new(@computer_x,@computer_o,@board)
     game.play
   when "1"
-    puts "Who should go first?"
-    puts "- Human, input 0"
-    puts "- Computer, input 1"
-    input_2 = gets.strip
+    who_should_start("human","computer")
 
     if(input_2=="0" || input_2=="1")
       puts "What token would you like to choose? Input X or O"
@@ -32,7 +29,10 @@ def start
     else
     end
   when "2"
-    who_should_start("human","computer")
+    puts "Who should go first?"
+    puts "- Player # 1, input 1"
+    puts "- Player # 2, input 2"
+    input_3 = gets.strip
     puts "What token would you like to choose? Input X or O"
     token_input = gets.strip
     human_vs_human(input_3,token_input)
