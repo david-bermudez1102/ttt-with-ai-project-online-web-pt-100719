@@ -26,6 +26,7 @@ def start
   else
     start
   end
+
   puts "Play again? 1 for Yes, or any other key for Exit"
   input_4 = gets.strip
     if(input_4=="1")
