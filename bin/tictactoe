@@ -97,7 +97,7 @@ def who_should_start(player_1,player_2)
   if(input=="0" || input=="1")
     puts "What token would you like to choose? Input X or O"
     token = gets.strip
-    
+
   else
     who_should_start(player_1,player_2)
   end
