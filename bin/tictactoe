@@ -26,9 +26,11 @@ def start
     input_2 = gets.strip
 
     if(input_2=="0" || input_2=="1")
-    puts "What token would you like to choose? Input X or O"
-    token_input = gets.strip
-    human_vs_computer(input_2,token_input)
+      puts "What token would you like to choose? Input X or O"
+      token_input = gets.strip
+      human_vs_computer(input_2,token_input)
+    else
+    end
   when "2"
     puts "Who should go first?"
     puts "- Player # 1, input 1"
