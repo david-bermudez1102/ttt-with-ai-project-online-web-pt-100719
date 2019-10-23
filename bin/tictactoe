@@ -95,7 +95,7 @@ def who_should_start(player_1,player_2)
   input = gets.strip
 
   if(input=="0" || input=="1")
-    choose_token(input)
+    choose_token(input,player_1,player_2)
   else
     who_should_start(player_1,player_2)
   end
