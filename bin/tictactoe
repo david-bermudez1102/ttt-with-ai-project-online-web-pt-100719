@@ -28,11 +28,11 @@ def start
   end
   puts "Play again? 1 for Yes, or any other key for Exit"
   input_4 = gets.strip
-  if(input_4=="1")
-    start
-  else
-    exit
-  end
+    if(input_4=="1")
+      start
+    else
+      exit
+    end
 end
 
 def human_vs_computer(input,token)
