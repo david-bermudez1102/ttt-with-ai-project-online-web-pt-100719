@@ -97,7 +97,7 @@ def who_should_start(player_1,player_2)
   if(input=="0" || input=="1")
     puts "What token would you like to choose? Input X or O"
     token = gets.strip
-    human_vs_computer(input,token)
+    
   else
     who_should_start(player_1,player_2)
   end
@@ -107,5 +107,9 @@ def choose_token(input)
   puts "What token would you like to choose? Input X or O"
   token = gets.strip
   if(token == "X" || token == "x" || token == "O" || token == "o")
+    human_vs_computer(input,token)
+  else
+    choose_token(input)
+  end
 end
 start
