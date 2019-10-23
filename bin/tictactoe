@@ -70,8 +70,6 @@ def human_vs_computer(input,token)
     end
     puts "Input a number from 1 to 9"
     game.play
-  else
-    human_vs_computer(input,token)
   end
 end
 
