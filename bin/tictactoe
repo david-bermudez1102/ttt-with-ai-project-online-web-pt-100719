@@ -105,7 +105,11 @@ def choose_token(input,player_1,player_2)
   puts "What token would you like to choose? Input X or O"
   token = gets.strip
   if(token == "X" || token == "x" || token == "O" || token == "o")
-    human_vs_computer(input,token)
+    if(player_1!=player_2)
+      human_vs_computer(input,token)
+    else
+      human_vs_human(input,token)
+    end
   else
     choose_token(input)
   end
