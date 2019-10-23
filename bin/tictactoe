@@ -106,5 +106,6 @@ end
 def choose_token(input)
   puts "What token would you like to choose? Input X or O"
   token = gets.strip
+  if(token == "X" || token == "x" || token == "O" || token == "o")
 end
 start
