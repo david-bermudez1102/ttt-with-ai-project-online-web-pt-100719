@@ -102,4 +102,9 @@ def who_should_start(player_1,player_2)
     who_should_start(player_1,player_2)
   end
 end
+
+def choose_token(input)
+  puts "What token would you like to choose? Input X or O"
+  token = gets.strip
+end
 start
