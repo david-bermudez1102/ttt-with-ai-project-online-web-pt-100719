@@ -22,13 +22,7 @@ def start
   when "1"
     who_should_start("human","computer")
   when "2"
-    puts "Who should go first?"
-    puts "- Player # 1, input 1"
-    puts "- Player # 2, input 2"
-    input_3 = gets.strip
-    puts "What token would you like to choose? Input X or O"
-    token_input = gets.strip
-    human_vs_human(input_3,token_input)
+    who_should_start("human","human")
   else
     start
   end
