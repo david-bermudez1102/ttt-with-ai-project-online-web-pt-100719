@@ -91,8 +91,6 @@ def human_vs_human(input,token)
     end
     puts "Input a number from 1 to 9"
     game.play
-  else
-    human_vs_human(input,token)
   end
 end
 start
