@@ -101,6 +101,7 @@ def who_should_start(player_1,player_2)
     token = gets.strip
     human_vs_computer(input,token)
   else
+    who_should_start(player_1,player_2)
   end
 end
 start
